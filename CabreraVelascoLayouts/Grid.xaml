@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CabreraVelascoLayouts.Grid"
+             Title="Layoout Grid">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <BoxView Color="Aquamarine"/>
+        <Label Text="Row 0, Column 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <BoxView Grid.Column="1" Color="BlueViolet"/>
+        <Label Text="Row 0, Column 1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <BoxView Grid.Row="1" Color="Orchid"/>
+        <Label Text="Row 1, Column 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <BoxView Grid.Column="1" Grid.Row="1" Color="PeachPuff"/>
+        <Label Text="Row 1, Column 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+    </Grid>
+    
+    
+    
+
+
+
+
+
+
+</ContentPage>
